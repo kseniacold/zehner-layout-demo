@@ -1,0 +1,188 @@
+
+//
+// ==============================================
+// Variables
+// ==============================================
+//
+
+//Layout
+
+//Color variables
+
+@subtle-grey: #e2e2e2;
+@background-grey: #f3f3f3;
+@background-white: #fff;
+@text-black: #000;
+@text-main: #798f90;
+@accent: #0c0cea;
+@accent-complementary: #ea7b0c;
+@pink-mono: #eea5fc;
+@dark-code-editor: #1b1d23;
+@green-code-editor: #A6F69E;
+
+/*
+==============================================
+Typography
+==============================================
+*/
+
+
+//Font size variables
+@base-font: 'Raleway', sans-serif;
+
+//Typography variables
+@h1-size: 6.429em;
+@h2-size: 3.571em;
+@h3-size: 2.857em;
+@h4-size: 1.888em;
+@h5-size: 1.125em;
+@h6-size: 1em;
+
+.p-mix() {
+  color: @text-main;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.h2-mix() {
+  font-size: @h2-size;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.h4-mix () {
+  font-size: @h4-size;
+  letter-spacing: 0;
+  line-height: 1.45em;
+}
+/*
+==============================================
+Mixins
+==============================================
+*/
+
+.flex() {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.flex-direction(@flex-direction) {
+  -webkit-flex-direction: @flex-direction;
+  -ms-flex-direction: @flex-direction;
+  flex-direction: @flex-direction;
+}
+
+.justify-content(@justify-content) {
+  -webkit-justify-content: @justify-content;
+  justify-content: @justify-content;
+}
+
+.align-items(@align-items) {
+  -webkit-align-items: @align-items;
+  align-items: @align-items;
+}
+
+.basic-font {
+  font-family: @base-font;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.055em;
+}
+
+.heavy-font {
+  font-weight: 800;
+}
+
+.black-font {
+  font-weight: 900;
+}
+
+.hover-box-shadow() {
+  -webkit-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
+  -moz-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
+  box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
+}
+
+/*
+==============================================
+Overall styles
+==============================================
+*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// Common modifiers
+[class*="accent"] {
+  color: @accent;
+}
+
+[class*="white"] {
+  background-color: @background-white;
+}
+
+[class*="grey"] {
+  background-color: @background-grey;
+}
+
+[class*="align-right"] {
+  text-align: right;
+}
+
+[class*="align-left"] {
+  text-align: left;
+}
+
+[class*="align-center"] {
+  text-align: center;
+}
+
+[class*="inline-block"] {
+  position: relative;
+  display: inline-block;
+}
+
+
+// Absolute positioning
+
+[class*="abs"] {
+  position: absolute;
+}
+
+[class*="abs-right"] {
+  right: 0;
+}
+
+[class*="abs-left"] {
+  position: absolute;
+  left: 0;
+}
+
+[class*="abs-bottom"] {
+  right: 0;
+}
+
+[class*="abs-top"] {
+  right: 0;
+}
+
+[class*="abs-btm-right"] {
+  right: 0;
+  bottom: 0;
+}
+
+[class*="abs-top-left"] {
+  left: 0;
+  top: 0;
+}
+
+// max-width, msx-height
+
+[class*="400w"] {
+  max-width: 400px;
+}
