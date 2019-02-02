@@ -1,0 +1,61 @@
+@import "../../styles/declarations";
+
+.features__content {
+  padding: 40px 0;
+}
+
+.features__heading {
+  .heading-2;
+
+  margin-bottom: 40px;
+}
+
+.features__text {
+  max-width: 32rem;
+  margin: auto;
+
+  margin-bottom: 50px;
+}
+
+.features__boxes {
+  .flex();
+  .justify-content(space-between);
+  .align-items(center);
+  max-width: 800px;
+  margin: auto;
+
+  margin-bottom: 13px;
+}
+
+.features__box {
+  position: relative;
+  width: 200px;
+  height: 180px;
+
+  cursor: pointer;
+}
+
+.features__box-link {
+  position: absolute;
+  z-index: 10;
+  width: 80%;
+
+  left: 0;
+  top: 37%;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.features__box-number {
+  position: absolute;
+  z-index: 1;
+
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.features__box-link {
+  color: black;
+
+}

@@ -1,3 +1,19 @@
+// ==============================================
+// Functions
+// ==============================================
+
+// These are mixins as functions
+// Available in Less.js v.3 and higher
+// Some editors do not recognize the usage and complain
+// This is valid syntax
+
+.to(@target, @context: 16 ) {
+  @em: ((@target / @context) + 0em);
+}
+
+.toR(@target, @context: 16 ) {
+  @rem: ((@target / @context) + 0rem);
+}
 
 //
 // ==============================================
@@ -5,61 +21,35 @@
 // ==============================================
 //
 
-//Layout
+//Layout\
+
+@max-page-width: 1230px;
+@max-page-inner: 962px;
 
 //Color variables
 
-@subtle-grey: #e2e2e2;
-@background-grey: #f3f3f3;
-@background-white: #fff;
-@text-black: #000;
-@text-main: #798f90;
-@accent: #0c0cea;
-@accent-complementary: #ea7b0c;
-@pink-mono: #eea5fc;
-@dark-code-editor: #1b1d23;
-@green-code-editor: #A6F69E;
+@hero-bg: #00c4d5;
+@border-grey: #c7c6c6;
+@accent: #ff5e48;
 
-/*
-==============================================
-Typography
-==============================================
-*/
+
+//
+// ==============================================
+// Typography
+// ==============================================
+//
 
 
 //Font size variables
-@base-font: 'Raleway', sans-serif;
+@base-font: 'PT Sans', sans-serif;;
 
 //Typography variables
-@h1-size: 6.429em;
-@h2-size: 3.571em;
-@h3-size: 2.857em;
-@h4-size: 1.888em;
-@h5-size: 1.125em;
-@h6-size: 1em;
 
-.p-mix() {
-  color: @text-main;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.h2-mix() {
-  font-size: @h2-size;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.h4-mix () {
-  font-size: @h4-size;
-  letter-spacing: 0;
-  line-height: 1.45em;
-}
-/*
-==============================================
-Mixins
-==============================================
-*/
+//
+// ==============================================
+// Mixins
+// ==============================================
+//
 
 .flex() {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -84,11 +74,25 @@ Mixins
   align-items: @align-items;
 }
 
-.basic-font {
+.heading-1 {
+  font-size: 48px;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  line-height: 1.15em;
+}
+
+.heading-2 {
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+.base-text {
   font-family: @base-font;
-  font-weight: 400;
-  font-size: 14px;
-  letter-spacing: 0.055em;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: normal;
+  letter-spacing: 1px;
 }
 
 .heavy-font {
@@ -103,86 +107,4 @@ Mixins
   -webkit-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
   -moz-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
   box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
-}
-
-/*
-==============================================
-Overall styles
-==============================================
-*/
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-// Common modifiers
-[class*="accent"] {
-  color: @accent;
-}
-
-[class*="white"] {
-  background-color: @background-white;
-}
-
-[class*="grey"] {
-  background-color: @background-grey;
-}
-
-[class*="align-right"] {
-  text-align: right;
-}
-
-[class*="align-left"] {
-  text-align: left;
-}
-
-[class*="align-center"] {
-  text-align: center;
-}
-
-[class*="inline-block"] {
-  position: relative;
-  display: inline-block;
-}
-
-
-// Absolute positioning
-
-[class*="abs"] {
-  position: absolute;
-}
-
-[class*="abs-right"] {
-  right: 0;
-}
-
-[class*="abs-left"] {
-  position: absolute;
-  left: 0;
-}
-
-[class*="abs-bottom"] {
-  right: 0;
-}
-
-[class*="abs-top"] {
-  right: 0;
-}
-
-[class*="abs-btm-right"] {
-  right: 0;
-  bottom: 0;
-}
-
-[class*="abs-top-left"] {
-  left: 0;
-  top: 0;
-}
-
-// max-width, msx-height
-
-[class*="400w"] {
-  max-width: 400px;
 }

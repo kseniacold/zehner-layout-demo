@@ -1,0 +1,30 @@
+@import "declarations";
+
+/*
+==============================================
+Overall styles
+==============================================
+*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// Common modifiers
+[class*="accent"] {
+  color: @accent;
+}
+
+[class*="align-right"] {
+  text-align: right;
+}
+
+[class*="align-left"] {
+  text-align: left;
+}
+
+[class*="align-center"] {
+  text-align: center;
+}
