@@ -23,20 +23,37 @@
   .justify-content(space-between);
   padding: 0 @small-gutter;
   margin-bottom: 44px;
-}
 
+  .flex-wrap(wrap);
+}
 
 .products__img-box {
   cursor: pointer;
+  flex: 1;
+  max-width: @products-w;
+  max-height: @products-h;
+  overflow: hidden;
 
-  &:hover {
-    border: 2px solid @accent;
-    border-style: outset;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
 
-    img {
-      opacity: .55;
-      transition: .5s ease;
+.products__img {
+  width: 100%;
+}
+
+
+@media @one-column {
+  .products__imgs {
+    .flex-direction(column);
+    .align-items(center);
+  }
+
+  .products__img-box {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 20px;
     }
-
   }
 }

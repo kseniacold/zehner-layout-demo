@@ -4,7 +4,7 @@
 
     $(document).ready(function () {
         toggleMenu();
-        $jQ(window).resize(toggleMenu);
+        $(window).resize(toggleMenu);
     });
 
     /**

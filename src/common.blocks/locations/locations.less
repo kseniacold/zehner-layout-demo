@@ -14,4 +14,20 @@
   padding: 0 @small-gutter;
 
   margin-bottom: 48px;
+  .flex-wrap(wrap);
+}
+
+.locations__location {
+  flex: 1;
+}
+
+@media @one-column {
+  .locations__boxes {
+    display: block;
+  }
+
+  .locations__location {
+    margin-bottom: 2rem;
+  }
+
 }

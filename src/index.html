@@ -14,7 +14,7 @@
         </p>
     </div>
     <header class="site__header header">
-        <div class="header__content content">
+        <div class="header_desktop header__content content">
             <div class="header__login"><a href="/" class="login__link link">Log In</a></div>
             <!-- Nav Left -->
             <nav class="header__nav header__nav_left nav">
@@ -65,6 +65,18 @@
                 <span class="inbox inbox__number">(2)</span>
             </div>
         </div>
+        <div class="header_mobile mobile">
+            <div class="logo mobile__logo">
+                <img src="../assets/logo.png" alt="Logo" />
+            </div>
+            <!-- End Logo -->
+            <div class="mobile__menu">
+                <a class="mobile__link" href="/">
+                    <img class="mobile__menu-icon" src="../assets/menu.svg"/>
+                </a>
+            </div>
+        </div>
+        <!-- End Mobile Header -->
     </header>
     <!-- End header -->
 
@@ -205,10 +217,10 @@
                 <button class="hero__button button">View Menu</button>
             </div>
         </section>
-        <!-- Hero Section End -->
+        <!-- End Hero Section -->
 
         <section class="page__section section features">
-            <div class="section__content features__content feature__content_align-center">
+            <div class="features__content feature__content_align-center content">
                 <h2 class="features__heading">
                     You buy it by the box
                 </h2>
@@ -236,7 +248,7 @@
         <!-- End Features Section -->
 
         <section class="page__section section info drinks">
-            <div class="section__content drinks__content drinks__content_align-center">
+            <div class="content drinks__content drinks__content_align-center">
                 <div class="info__heading-wrapper">
                     <h1 class="info__heading heading heading_1">Drinks</h1>
                     <hr class="info__dash dash" />
@@ -252,7 +264,7 @@
         <!-- End Drinks Section -->
 
         <section class="page__section section products">
-            <div class="section__content products__content products__content_align-center content">
+            <div class="products__content products__content_align-center content">
                 <div class="products__heading">
                     <hr class="products__dash dash" />
                     <h2 class="heading heading_2">Pick Your Pleasure</h2>
@@ -261,17 +273,29 @@
                     Our products are nourishing, satiating and never cut with cheap fillers.
                 </p>
                 <div class="products__imgs">
-                    <div class="products__img-box">
-                        <img src="../assets/lemonades.jpg" alt="Lemonades" />
+                    <div class="products__img-box hover__element">
+                        <img class="products__img" src="../assets/lemonades.jpg" alt="Lemonades" />
+                        <div class="hover__box">
+                            <h3 class="hover__heading">View Lemonades Menu</h3>
+                        </div>
                     </div>
-                    <div class="products__img-box">
-                        <img src="../assets/milks.jpg" alt="Milks" />
+                    <div class="products__img-box hover__element">
+                        <img class="products__img" src="../assets/milks.jpg" alt="Milks" />
+                        <div class="hover__box">
+                            <h3 class="hover__heading">View Milks Menu</h3>
+                        </div>
                     </div>
-                    <div class="products__img-box">
-                        <img src="../assets/waters.jpg" alt="Waters" />
+                    <div class="products__img-box hover__element">
+                        <img class="products__img" src="../assets/waters.jpg" alt="Waters" />
+                        <div class="hover__box">
+                            <h3 class="hover__heading">View Water Menu</h3>
+                        </div>
                     </div>
-                    <div class="products__img-box">
-                        <img src="../assets/smoothies.jpg" alt="Smoothies" />
+                    <div class="products__img-box hover__element">
+                        <img class="products__img" src="../assets/smoothies.jpg" alt="Smoothies" />
+                        <div class="hover__box">
+                            <h3 class="hover__heading">View Smoothie Menu</h3>
+                        </div>
                     </div>
                 </div>
                 <button class="products__button button button_transparent">View Drinks Menu</button>
@@ -281,7 +305,7 @@
 
 
         <section class="page__section section info cleanse">
-            <div class="section__content cleanse__content cleanse__content_align-center content">
+            <div class="cleanse__content cleanse__content_align-center content">
                 <div class="info__heading-wrapper">
                     <h1 class="info__heading heading_1">Cleanse</h1>
                     <hr class="info__dash dash" />
@@ -297,29 +321,49 @@
 
 
         <section class="page__section section locations">
-            <div class="section__content locations__content locations__content_align-center content">
+            <div class="locations__content locations__content_align-center content">
                 <h1 class="locations__heading heading heading_1">Locations</h1>
                 <div class="locations__boxes boxes">
                     <div class="locations__location location">
-                        <img class="location__img" src="../assets/platform.jpg">
+                        <div class="location__hover hover__element">
+                            <img class="location__img" src="../assets/platform.jpg">
+                            <div class="hover__box">
+                                <h3 class="hover__heading">View Store Details</h3>
+                            </div>
+                        </div>
+
                         <h3 class="location__heading">Platform</h3>
                         <p class="location__text text">
                             Monday- Sunday - 7am - 8pm
                         </p>
+
                     </div>
                     <!-- End Location -->
 
                     <div class="locations__location location">
-                        <img class="location__img" src="../assets/dtla.jpg">
+                        <div class="location__hover hover__element">
+                            <img class="location__img" src="../assets/dtla.jpg">
+                            <div class="hover__box">
+                                <h3 class="hover__heading">View Store Details</h3>
+                            </div>
+                        </div>
+
                         <h3 class="location__heading">DTLA</h3>
                         <p class="location__text text">
                             Monday- Sunday - 7am - 8pm
                         </p>
+
                     </div>
                     <!-- End Location -->
 
                     <div class="locations__location location">
-                        <img class="location__img" src="../assets/pasadena.jpg">
+                        <div class="location__hover hover__element">
+                            <img class="location__img" src="../assets/pasadena.jpg">
+                            <div class="hover__box">
+                                <h3 class="hover__heading">View Store Details</h3>
+                            </div>
+                        </div>
+
                         <h3 class="location__heading">PASADENA</h3>
                         <p class="location__text text">
                             Monday - Saturday - 7:30am - 7pm
@@ -330,7 +374,13 @@
                     <!-- End Location -->
 
                     <div class="locations__location location">
-                        <img class="location__img" src="../assets/venice.jpg">
+                        <div class="location__hover hover__element">
+                            <img class="location__img" src="../assets/venice.jpg">
+                            <div class="hover__box">
+                                <h3 class="hover__heading">View Store Details</h3>
+                            </div>
+                        </div>
+
                         <h3 class="location__heading">Venice</h3>
                         <p class="location__text text">
                             Monday-Sunday - 7am - 8pm
@@ -345,7 +395,7 @@
         </section>
         <!-- End Locations -->
     </main>
-    <!-- End PAge -->
+    <!-- End Page -->
 
     <footer class="site__footer footer">
         <div class="footer__content content_inner">

@@ -15,6 +15,14 @@
   @rem: ((@target / @context) + 0rem);
 }
 
+// Media queries
+// ============================= //
+
+@desktop-menu: ~"screen and (min-width: 1201px)";
+@mobile-menu: ~"screen and (max-width: 1200px)";
+@one-column: ~"screen and (max-width: 980px)";
+@mobile: ~"screen and (max-width: 980px)";
+
 //
 // ==============================================
 // Variables
@@ -28,6 +36,12 @@
 
 @padding-shift: (@max-page-width - @max-page-inner) / 2;
 @small-gutter: 20px;
+
+@products-w: 270px;
+@products-h: 270px;
+
+@location-w: 270px;
+@location-h: 200px;
 
 //Color variables
 
@@ -58,10 +72,10 @@
 //
 
 .flex() {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .flex-direction(@flex-direction) {
@@ -78,6 +92,11 @@
 .align-items(@align-items) {
   -webkit-align-items: @align-items;
   align-items: @align-items;
+}
+
+.flex-wrap(@wrap) {
+  -ms-flex-wrap: @wrap;
+  flex-wrap: @wrap;
 }
 
 .heading-1 {
@@ -105,10 +124,4 @@
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 1.5em;
-}
-
-.hover-box-shadow() {
-  -webkit-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
-  -moz-box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
-  box-shadow: 18px -18px 0px 0px rgba(12,12,234,1);
 }

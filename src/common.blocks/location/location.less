@@ -4,11 +4,25 @@
   text-align: left;
 }
 
+.location__hover {
+  max-width: @location-w;
+  max-height: @location-h;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
 .location__heading {
   .heading-3;
   color: @accent;
 }
 
 .location__img {
-  margin-bottom: 20px;
+  height: 100%;
+}
+
+@media @one-column {
+  .location {
+    width: 270px;
+    margin: auto;
+  }
 }

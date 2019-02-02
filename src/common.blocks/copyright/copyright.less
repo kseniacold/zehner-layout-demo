@@ -26,3 +26,21 @@
     margin-right: 20px;
   }
 }
+
+@media @one-column {
+  .copyright {
+    text-align: center;
+  }
+
+  .copyright__content {
+    display: block;
+  }
+
+  .copyright__text {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+

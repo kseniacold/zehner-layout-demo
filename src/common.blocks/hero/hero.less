@@ -6,6 +6,7 @@
 
 .hero__content {
   background-image: url("../../assets/hero-bg.jpg");
+  background-repeat: no-repeat;
   padding: 108px 0 148px @padding-shift;
 }
 
@@ -24,4 +25,12 @@
 
   max-width: 480px;
   margin-bottom: 30px;
+}
+
+@media @one-column {
+  .hero__content {
+    background-size: cover;
+    padding: 150px 8%;
+    background-position-x: 33%;
+  }
 }
