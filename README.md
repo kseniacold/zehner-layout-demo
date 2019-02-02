@@ -8,9 +8,13 @@ Build files are located in the `./dist/`  directory and can be ran as is.
 
 ---
 
+__Live URL:__ [http://zehner-demo.kseniacodes.com/](http://zehner-demo.kseniacodes.com/)
+
+---
+
 ## Views
 
-* Landing Page Screen Shot:
+* Landing Page Screenshot:
 
 ![Main screen][main_screen]
 
