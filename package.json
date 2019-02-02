@@ -1,0 +1,29 @@
+{
+  "name": "zahner-layout-demo",
+  "version": "1.0.0",
+  "description": "Plain Lading Page with styles completed according to the design prototype.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -r ./dist/* && cp ./src/index.html ./dist/ && cp -rv ./assets ./dist/ && lessc ./src/styles/build.less ./dist/styles/build.css && cp -rv ./src/scripts ./dist/",
+    "serve": "npx serve ./dist/",
+    "start": "npm run build && npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kseniacold/zehner-layout-demo.git"
+  },
+  "author": "kseniacold",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kseniacold/zehner-layout-demo/issues"
+  },
+  "homepage": "https://github.com/kseniacold/zehner-layout-demo#readme",
+  "devDependencies": {
+    "less": "^3.9.0",
+    "serve": "^10.1.1"
+  }
+}
