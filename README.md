@@ -14,7 +14,7 @@ Build files are located in the `./dist/`  directory and can be ran as is.
 
 ![Main screen][main_screen]
 
-[main_screen]: https://github.com/kseniacold/zehner-layout-demo/blob/master/docs/main_screen.png?raw=true "Zehner Layout Demo Screen"
+[main_screen]: https://github.com/kseniacold/zehner-layout-demo/blob/master/docs/main-screen.png?raw=true "Zehner Layout Demo Screen"
 
 ---
 
@@ -42,7 +42,7 @@ In the project directory, you can run:
 
 Builds the landing page in the `./dist/` directory and serves in on the port `5000`<br>
 
-Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+Open __http://localhost:5000__ to view it in the browser.
 
 #### `npm run serve`
 
@@ -58,13 +58,13 @@ Compiles `.less` to `.css` files. Copies necessary files to the `./dist/` direct
 ## Project Structure & Layout
 
 * Project naming and styling principles adhere to [BEM methodology](https://en.bem.info/methodology/)
-* Each __block__ has it's own folder in `./src/common.blocks` that provides modilarity for stylesheets and allows easy refactoring for `React.js` components if needed.
+* Each __block__ has it's own folder in `./src/common.blocks` that provides modularity for stylesheets and allows easy refactoring for `React.js` components if needed
 
 ---
 
 ## Notes
 
-* __DINPro__ font is replace with (PT SANS Googgit le Font)[https://fonts.google.com/specimen/PT+Sans]
+* __DINPro__ font is replaced with [PT Sans Google Font](https://fonts.google.com/specimen/PT+Sans)
 <br>
 <br>
 
