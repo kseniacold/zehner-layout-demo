@@ -1,0 +1,28 @@
+@import "../../styles/declarations";
+
+.copyright {
+  border-top: 1px solid @border-grey;
+  background-color: @copyright-bg;
+  padding: 20px 0;
+}
+
+.copyright__content {
+  .flex();
+  .justify-content(space-between);
+
+  padding: 0 @small-gutter;
+}
+
+.copyright__link {
+  color: @copyright;
+}
+
+.copyright__text_big {
+  flex-grow: 2;
+}
+
+.copyright__text {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}

@@ -6,6 +6,25 @@
   text-transform: uppercase;
   font-size: 18px;
   background-color: @accent;
+  border: 1px solid @accent;
   padding: 15px 34px;
   font-weight: bold;
+
+  &:hover {
+    color: @accent;
+    background-color: white;
+    transition: .5s ease;
+  }
+}
+
+.button_transparent {
+  background: none;
+  border: 1px solid @accent;
+  color: @accent;
+
+  &:hover {
+    color: white;
+    background-color: @accent;
+    transition: .5s ease;
+  }
 }

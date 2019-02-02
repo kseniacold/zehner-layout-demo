@@ -8,5 +8,32 @@
 .header__content{
   .flex();
   .align-items(center);
-  .justify-content(space-between);
+  .justify-content(center);
+
+  padding: 0 @small-gutter;
+}
+
+.header__login {
+  width: @padding-shift;
+}
+
+.header__nav {
+  flex-grow: 1;
+}
+
+.header__nav_left {
+  .justify-content(flex-start);
+}
+
+.header__nav_right {
+  .justify-content(flex-end);
+}
+
+.header__logo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.header__inbox {
+  margin-left: 40px;
 }

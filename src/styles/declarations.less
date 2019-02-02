@@ -21,17 +21,23 @@
 // ==============================================
 //
 
-//Layout\
+//Layout
 
 @max-page-width: 1230px;
 @max-page-inner: 962px;
+
+@padding-shift: (@max-page-width - @max-page-inner) / 2;
+@small-gutter: 20px;
 
 //Color variables
 
 @hero-bg: #00c4d5;
 @border-grey: #c7c6c6;
 @accent: #ff5e48;
-
+@subhead-cl: #231f20;
+@list-item-cl: #231f20;
+@copyright-bg: #f9f9f9;
+@copyright: #999596;
 
 //
 // ==============================================
@@ -87,20 +93,18 @@
   letter-spacing: 2px;
 }
 
+.heading-3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
 .base-text {
   font-family: @base-font;
   font-weight: 300;
   font-size: 15px;
-  letter-spacing: normal;
   letter-spacing: 1px;
-}
-
-.heavy-font {
-  font-weight: 800;
-}
-
-.black-font {
-  font-weight: 900;
+  line-height: 1.5em;
 }
 
 .hover-box-shadow() {

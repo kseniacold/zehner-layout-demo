@@ -1,0 +1,18 @@
+@import "../../styles/declarations";
+
+.top-list__heading {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: @list-item-cl;
+  margin-bottom: 12px;
+}
+
+.top-list__link {
+  color: @list-item-cl;
+}
+
+.top-list__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}

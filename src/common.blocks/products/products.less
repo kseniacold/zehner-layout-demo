@@ -1,5 +1,42 @@
 @import "../../styles/declarations";
 
+.products__content {
+  padding: 50px 0;
+}
+
+.products__heading {
+  margin-bottom: 20px;
+}
+
+.products__dash {
+  margin-bottom: 22px;
+}
+
+.products__text {
+  max-width: 450px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
 .products__imgs {
   .flex();
+  .justify-content(space-between);
+  padding: 0 @small-gutter;
+  margin-bottom: 44px;
+}
+
+
+.products__img-box {
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid @accent;
+    border-style: outset;
+
+    img {
+      opacity: .55;
+      transition: .5s ease;
+    }
+
+  }
 }
