@@ -61,14 +61,20 @@ Compiles `.less` to `.css` files. Copies necessary files to the `./dist/` direct
 
 ## Project Structure & Layout
 
-* Project naming and styling principles adhere to [BEM methodology](https://en.bem.info/methodology/)
-* Each __block__ has it's own folder in `./src/common.blocks` that provides modularity for stylesheets and allows easy refactoring for `React.js` components if needed
+* Project naming and styling principles adhere to [BEM methodology](https://en.bem.info/methodology/).
+* CSS selector in `index.html` file are formed to describe __blocks__, __elements__ & __modifiers__.
+* Each __block__ has it's own folder in `./src/common.blocks` that provides modularity for stylesheets and allows easy refactoring for `React.js` components if needed.
+* Other stylesheets include `./src/styles/declarations.less` - provide commons variables & mixins, `./src/styles/commons.less` - provide site-wide styles, `./src/styles/reset.less` - provide base stylesheet for reseting some __css__ rules. 
 
 ---
 
 ## Notes
 
-* __DINPro__ font is replaced with [PT Sans Google Font](https://fonts.google.com/specimen/PT+Sans)
+* __DINPro__ font is replaced with [PT Sans Google Font](https://fonts.google.com/specimen/PT+Sans).
+* __Units__: I prefer using one base font size for `<body></body>` element and use relative units for all other elements. I use `less mixins` as functions for easy conversion. Example givien in `./src/common.blocks/menu/menu.less`. In this layout demo most elements use `px` units for simplicity.  
+* __Background Images__: In this layout demo background images are not productions quality. For simplicity I extracted flatten background images from the design prototype. For production, either larger background images should be used or images should be saved as `.png` al overlayed on the colored background.  
+* __Prefixes & Minification__: For production it would be better to minify all the scripts and stylesheet and add automatically broswer prefixes. Here, for simplicity, basic `less` mixin arte used for prefixing.  
+
 <br>
 <br>
 
